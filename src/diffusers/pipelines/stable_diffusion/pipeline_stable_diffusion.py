@@ -61,7 +61,7 @@ class StableDiffusionPipeline(DiffusionPipeline):
         scheduler: Union[
             DDIMScheduler, PNDMScheduler, LMSDiscreteScheduler, EulerDiscreteScheduler, EulerAncestralDiscreteScheduler
         ],
-        safety_checker: StableDiffusionSafetyChecker,
+        safety_checker: None,
         feature_extractor: CLIPFeatureExtractor,
     ):
         super().__init__()
